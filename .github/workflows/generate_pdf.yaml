@@ -4,9 +4,9 @@ name: generate_pdf
 on:
   push:
     branches:
-    - test_actions
-      #paths:
-      #- book/**
+    - main
+    paths:
+    - book/**
 # Install the latex things to create the pdf
 
 jobs:
@@ -32,6 +32,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add tinymlops_book.pdf
         git commit -m "update PDF version of the book"
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
