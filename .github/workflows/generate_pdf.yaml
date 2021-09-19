@@ -4,35 +4,35 @@ name: generate_pdf
 on:
   push:
     branches:
-    - main
-    paths:
-    - book/**
+    - test_actions
+      #paths:
+      #- book/**
 # Install the latex things to create the pdf
 
 jobs:
   generate-book:
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v2
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
 
-  - name: install latex dependencies
-    run: |
-      sudo apt-get install texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
-  
-  # Create the pdf version of the book
-  - name: Build the pdf book
-    run: |
-      jupyter-book build . --builder pdflatex
-  
-  # This next step moves, renames and commits the created pdf
-  - name: Commit and rename pdf
-    run: |
-      mv ./_build/latex/python.pdf codingingis.pdf
-      git config --local user.email "action@github.com"
-      git config --local user.name "GitHub Action"
-      git add codingingis.pdf
-      git commit -m "update PDF version of the book"
-  - name: Push changes
-    uses: ad-m/github-push-action@master
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    # Create the pdf version of the book
+    - name: Build the pdf book
+      run: |
+        jupyter-book build book/ --builder pdfhtml
+    
+    # This next step moves, renames and commits the created pdf
+    - name: Commit and rename pdf
+      run: |
+        mv book/_build/pdf/book.pdf tinymlops_book.pdf
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add tinymlops_book.pdf
+        git commit -m "update PDF version of the book"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
