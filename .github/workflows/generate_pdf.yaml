@@ -18,7 +18,10 @@ jobs:
     - name: install latex dependencies
       run: |
         sudo apt-get install texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
-    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
     # Create the pdf version of the book
     - name: Build the pdf book
       run: |
