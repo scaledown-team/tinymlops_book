@@ -15,9 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: install latex dependencies
-      run: |
-        sudo apt-get install texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
@@ -25,15 +22,15 @@ jobs:
     # Create the pdf version of the book
     - name: Build the pdf book
       run: |
-        jupyter-book build book --builder pdflatex
+        jupyter-book build book/ --builder pdfhtml
     
     # This next step moves, renames and commits the created pdf
     - name: Commit and rename pdf
       run: |
-        mv ./_build/latex/python.pdf codingingis.pdf
+        mv book/_build/pdf/book.pdf tinymlops_book.pdf
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add codingingis.pdf
+        git add tinymlops_book.pdf
         git commit -m "update PDF version of the book"
     - name: Push changes
       uses: ad-m/github-push-action@master
