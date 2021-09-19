@@ -1,11 +1,10 @@
 format: jb-book
-root: intro
+root: index
 parts:
   - caption: Preface
     chapters:
-    - file: markdown
-    - file: content
+    - file: chapters/preface/markdown
+    - file: chapters/preface/content
   - caption: Introduction
     chapters:
-    - file: markdown
-    - file: content
+    - file: chapters/introduction/notebooks
