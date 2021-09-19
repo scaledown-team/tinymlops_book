@@ -25,7 +25,7 @@ jobs:
     # Create the pdf version of the book
     - name: Build the pdf book
       run: |
-        jupyter-book build . --builder pdflatex
+        jupyter-book build book --builder pdflatex
     
     # This next step moves, renames and commits the created pdf
     - name: Commit and rename pdf
