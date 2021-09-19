@@ -1,5 +1,5 @@
-- file: intro
+format: jb-book
+root: intro
+chapters:
+- file: markdown
 - file: content
-  sections:
-    - file: markdown
-    - file: notebooks
