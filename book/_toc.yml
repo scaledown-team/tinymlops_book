@@ -1,10 +1,65 @@
 format: jb-book
 root: index
+options:
+  numbered: true
 parts:
   - caption: Preface
     chapters:
-    - file: chapters/preface/markdown
-    - file: chapters/preface/content
+    - file: chapters/preface/acknowledgements
   - caption: Introduction
     chapters:
-    - file: chapters/introduction/notebooks
+    - file: chapters/introduction/what_is_mlops
+    - file: chapters/introduction/what_is_tinyml
+    - file: chapters/introduction/mlops_tools
+    - file: chapters/introduction/what_is_tinymlops
+  - caption: TinyMLOps
+    chapters:
+    - file: chapters/tinymlops/mlops_for_tinyml
+    - file: chapters/tinymlops/need_for_tinymlops
+    - file: chapters/tinymlops/challenges
+    - file: chapters/tinymlops/tinymlops_tools
+    - file: chapters/tinymlops/pipeline
+    - file: chapters/tinymlops/hardware
+  - caption: Training Models
+    chapters:
+    - file: chapters/train/what_is_training
+    - file: chapters/train/training_challenges
+    - file: chapters/train/training_techniques
+    - file: chapters/train/training_tools
+    - file: chapters/train/training_pipeline
+  - caption: Optimizing Models
+    chapters:
+    - file: chapters/optimize/what_is_optimization
+    - file: chapters/optimize/optimization_challenges
+    - file: chapters/optimize/optimization_techniques
+    - file: chapters/optimize/optimization_tools
+    - file: chapters/optimize/optimization_pipeline
+  - caption: Model Files
+    chapters:
+    - file: chapters/model/what_are_model_files
+    - file: chapters/model/model_file_challenges
+    - file: chapters/model/working_with_model_files
+  - caption: Benchmarking TinyML Systems
+    chapters:
+    - file: chapters/benchmark/what_is_benchmarking
+    - file: chapters/benchmark/benchmarking_challenges
+    - file: chapters/benchmark/how_to_benchmark
+    - file: chapters/benchmark/benchmarking_pipeline
+  - caption: Deploying TinyML Systems
+    chapters:
+    - file: chapters/deploy/what_is_deploying
+    - file: chapters/deploy/deploying_challenges
+    - file: chapters/deploy/how_to_deploy
+    - file: chapters/deploy/deploying_pipeline
+  - caption: Monitoring and Updating TinyML Systems
+    chapters:
+    - file: chapters/monitor_update/what_is_monitor_update
+    - file: chapters/monitor_update/monitor_update_challenges
+    - file: chapters/monitor_update/monitor_update_techniques
+    - file: chapters/monitor_update/monitor_update_pipeline
+  - caption: Security and Robustness of TinyML Systems
+    chapters:
+    - file: chapters/security_robustness/what_is_security_robustness
+    - file: chapters/security_robustness/security_robustness_challenges
+    - file: chapters/security_robustness/security_robustness_techniques
+    - file: chapters/security_robustness/security_robustness_pipeline
