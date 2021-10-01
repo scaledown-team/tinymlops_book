@@ -5,53 +5,54 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to your Jupyter Book &#8212; Practical TinyMLOps</title>
+    <title>Pipeline for Optimizing TinyML Models &#8212; Practical TinyMLOps</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Acknowledgements" href="chapters/preface/acknowledgements.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="What are TinyML Model Files" href="../model/what_are_model_files.html" />
+    <link rel="prev" title="Tools for Optimizing TinyML Models" href="optimization_tools.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -68,26 +69,26 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="#">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="../../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Practical TinyMLOps</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
    Welcome to your Jupyter Book
   </a>
  </li>
@@ -99,7 +100,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/preface/acknowledgements.html">
+  <a class="reference internal" href="../preface/acknowledgements.html">
    Acknowledgements
   </a>
  </li>
@@ -111,22 +112,22 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/introduction/what_is_mlops.html">
+  <a class="reference internal" href="../introduction/what_is_mlops.html">
    What is MLOps
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/introduction/what_is_tinyml.html">
+  <a class="reference internal" href="../introduction/what_is_tinyml.html">
    What is TinyML
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/introduction/mlops_tools.html">
+  <a class="reference internal" href="../introduction/mlops_tools.html">
    MLOps Tools and Techniques
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/introduction/what_is_tinymlops.html">
+  <a class="reference internal" href="../introduction/what_is_tinymlops.html">
    What is TinyMLOps?
   </a>
  </li>
@@ -138,32 +139,32 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/tinymlops/mlops_for_tinyml.html">
+  <a class="reference internal" href="../tinymlops/mlops_for_tinyml.html">
    MLOps for TinyML
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/tinymlops/need_for_tinymlops.html">
+  <a class="reference internal" href="../tinymlops/need_for_tinymlops.html">
    Need for TinyMLOps
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/tinymlops/challenges.html">
+  <a class="reference internal" href="../tinymlops/challenges.html">
    TinyMLOps Challenges
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/tinymlops/tinymlops_tools.html">
+  <a class="reference internal" href="../tinymlops/tinymlops_tools.html">
    Tools for TinyMLOps
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/tinymlops/pipeline.html">
+  <a class="reference internal" href="../tinymlops/pipeline.html">
    A Typical TinyMLOps Pipeline
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/tinymlops/hardware.html">
+  <a class="reference internal" href="../tinymlops/hardware.html">
    Hardware for TinyMLOps
   </a>
  </li>
@@ -175,27 +176,27 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/train/what_is_training.html">
+  <a class="reference internal" href="../train/what_is_training.html">
    Training Models for TinyML
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/train/training_challenges.html">
+  <a class="reference internal" href="../train/training_challenges.html">
    Challenges in Training TinyML Models
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/train/training_techniques.html">
+  <a class="reference internal" href="../train/training_techniques.html">
    Techniques for Training TinyML Models
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/train/training_tools.html">
+  <a class="reference internal" href="../train/training_tools.html">
    Tools for Training TinyML Models
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/train/training_pipeline.html">
+  <a class="reference internal" href="../train/training_pipeline.html">
    Pipeline for Training TinyML Models
   </a>
  </li>
@@ -205,29 +206,29 @@
   Optimizing Models
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/optimize/what_is_optimization.html">
+  <a class="reference internal" href="what_is_optimization.html">
    Optimizing Models for TinyML
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/optimize/optimization_challenges.html">
+  <a class="reference internal" href="optimization_challenges.html">
    Challenges in Optimizing TinyML Models
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/optimize/optimization_techniques.html">
+  <a class="reference internal" href="optimization_techniques.html">
    Techniques for Optimizing TinyML Models
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/optimize/optimization_tools.html">
+  <a class="reference internal" href="optimization_tools.html">
    Tools for Optimizing TinyML Models
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapters/optimize/optimization_pipeline.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Pipeline for Optimizing TinyML Models
   </a>
  </li>
@@ -239,17 +240,17 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/model/what_are_model_files.html">
+  <a class="reference internal" href="../model/what_are_model_files.html">
    What are TinyML Model Files
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/model/model_file_challenges.html">
+  <a class="reference internal" href="../model/model_file_challenges.html">
    Dealing with Multiple Model Files
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/model/working_with_model_files.html">
+  <a class="reference internal" href="../model/working_with_model_files.html">
    Working with Model Files
   </a>
  </li>
@@ -261,22 +262,22 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/benchmark/what_is_benchmarking.html">
+  <a class="reference internal" href="../benchmark/what_is_benchmarking.html">
    What is Benchmarking
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/benchmark/benchmarking_challenges.html">
+  <a class="reference internal" href="../benchmark/benchmarking_challenges.html">
    Challenges in Benchmarking TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/benchmark/how_to_benchmark.html">
+  <a class="reference internal" href="../benchmark/how_to_benchmark.html">
    How to Benchmark TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/benchmark/benchmarking_pipeline.html">
+  <a class="reference internal" href="../benchmark/benchmarking_pipeline.html">
    Pipeline for Benchmarking TinyML Systems
   </a>
  </li>
@@ -288,22 +289,22 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/deploy/what_is_deploying.html">
+  <a class="reference internal" href="../deploy/what_is_deploying.html">
    Deploying TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/deploy/deploying_challenges.html">
+  <a class="reference internal" href="../deploy/deploying_challenges.html">
    Challenges in Deploying TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/deploy/how_to_deploy.html">
+  <a class="reference internal" href="../deploy/how_to_deploy.html">
    How to Deploy TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/deploy/deploying_pipeline.html">
+  <a class="reference internal" href="../deploy/deploying_pipeline.html">
    Pipeline for Deploying TinyML Systems
   </a>
  </li>
@@ -315,22 +316,22 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/monitor_update/what_is_monitor_update.html">
+  <a class="reference internal" href="../monitor_update/what_is_monitor_update.html">
    Monitoring and Updating TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/monitor_update/monitor_update_challenges.html">
+  <a class="reference internal" href="../monitor_update/monitor_update_challenges.html">
    Challenges in Monitoring and Updating TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/monitor_update/monitor_update_techniques.html">
+  <a class="reference internal" href="../monitor_update/monitor_update_techniques.html">
    Techniques for Monitoring and Updating TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/monitor_update/monitor_update_pipeline.html">
+  <a class="reference internal" href="../monitor_update/monitor_update_pipeline.html">
    Pipeline for Monitoring and Updating TinyML Systems
   </a>
  </li>
@@ -342,22 +343,22 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/security_robustness/what_is_security_robustness.html">
+  <a class="reference internal" href="../security_robustness/what_is_security_robustness.html">
    Secure and Robust TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/security_robustness/security_robustness_challenges.html">
+  <a class="reference internal" href="../security_robustness/security_robustness_challenges.html">
    Challenges in Designing Secure and Robust TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/security_robustness/security_robustness_techniques.html">
+  <a class="reference internal" href="../security_robustness/security_robustness_techniques.html">
    Creating Secure and Robust TinyML Systems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/security_robustness/security_robustness_pipeline.html">
+  <a class="reference internal" href="../security_robustness/security_robustness_pipeline.html">
    Architecture and Pipeline
   </a>
  </li>
@@ -402,9 +403,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/chapters/optimize/optimization_pipeline.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -422,7 +423,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/scaledown-team/tinymlops_book/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/scaledown-team/tinymlops_book/issues/new?title=Issue%20on%20page%20%2Fchapters/optimize/optimization_pipeline.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -438,6 +439,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/scaledown-team/tinymlops_book/main?urlpath=tree/book/chapters/optimize/optimization_pipeline.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -451,31 +469,8 @@
         
               <div>
                 
-  <div class="section" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Permalink to this headline">¶</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.</p>
-<p>Check out the content pages bundled with this sample book to get started.</p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
+  <div class="section" id="pipeline-for-optimizing-tinyml-models">
+<h1>Pipeline for Optimizing TinyML Models<a class="headerlink" href="#pipeline-for-optimizing-tinyml-models" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -491,7 +486,7 @@ structured.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./chapters/optimize"
         },
         predefinedOutput: true
     }
@@ -507,11 +502,20 @@ structured.</p>
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="optimization_tools.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Tools for Optimizing TinyML Models</p>
+            </div>
+        </a>
+    </div>
      <div id="next">
-        <a class="right-next" href="chapters/preface/acknowledgements.html" title="next page">
+        <a class="right-next" href="../model/what_are_model_files.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Acknowledgements</p>
+                <p class="prevnext-title">What are TinyML Model Files</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
@@ -537,7 +541,7 @@ structured.</p>
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
   
   </body>
