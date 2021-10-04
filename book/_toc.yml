@@ -20,25 +20,25 @@ parts:
     - file: chapters/tinymlops/tinymlops_tools
     - file: chapters/tinymlops/pipeline
     - file: chapters/tinymlops/hardware
-  - caption: Training Models
+  - caption: Data Engineering for TinyML
+    chapters:
+    - file: chapters/data/data_challenges
+    - file: chapters/data/data_collection
+    - file: chapters/data/data_preprocessing
+  - caption: Training Models for TinyML
     chapters:
     - file: chapters/train/what_is_training
     - file: chapters/train/training_challenges
     - file: chapters/train/training_techniques
     - file: chapters/train/training_tools
     - file: chapters/train/training_pipeline
-  - caption: Optimizing Models
+  - caption: Optimizing Models for TinyML
     chapters:
     - file: chapters/optimize/what_is_optimization
     - file: chapters/optimize/optimization_challenges
     - file: chapters/optimize/optimization_techniques
     - file: chapters/optimize/optimization_tools
     - file: chapters/optimize/optimization_pipeline
-  - caption: Model Files
-    chapters:
-    - file: chapters/model/what_are_model_files
-    - file: chapters/model/model_file_challenges
-    - file: chapters/model/working_with_model_files
   - caption: Benchmarking TinyML Systems
     chapters:
     - file: chapters/benchmark/what_is_benchmarking
