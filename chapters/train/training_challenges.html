@@ -171,7 +171,29 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Training Models
+  Data Engineering for TinyML
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data/data_challenges.html">
+   Data Challenges
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data/data_collection.html">
+   Data Collection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data/data_preprocessing.html">
+   Preprocessing Data
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Training Models for TinyML
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -203,7 +225,7 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Optimizing Models
+  Optimizing Models for TinyML
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -230,28 +252,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../optimize/optimization_pipeline.html">
    Pipeline for Optimizing TinyML Models
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Model Files
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../model/what_are_model_files.html">
-   What are TinyML Model Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../model/model_file_challenges.html">
-   Dealing with Multiple Model Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../model/working_with_model_files.html">
-   Working with Model Files
   </a>
  </li>
 </ul>
@@ -499,8 +499,11 @@
                 
   <div class="section" id="challenges-in-training-tinyml-models">
 <h1>Challenges in Training TinyML Models<a class="headerlink" href="#challenges-in-training-tinyml-models" title="Permalink to this headline">¶</a></h1>
-<p>When ML engineers train models, they usually do not think about where the model will be deployed. This is because such models deployed in large multi-core systems with support for many instruction sets, compilers and toolkits that can abstract away the complications of the underlying hardware. Moreover, if a model does have poor execution speeds, it is easy to either add more compute resources (like more CPU cores or GPUs) to it or parallelize the execution of the model across multiple devices to improve its latency.</p>
-<p>However this is not true in the case of TinyML where the final hardware will be resource constrained and with limited instruction set support. Therefore, for TinyML, the final hardware is a bottleneck that we need to keep in mind when training our models.</p>
+<p>When ML engineers train models, they usually do not think about where the model will be deployed. Their models  are usually deployed in large multi-core systems with support for many instruction sets, compilers and toolkits that can abstract away the complications of the underlying hardware. Moreover, if a model does have poor execution speeds, it is easy to either add more compute resources (like more CPU cores or GPUs) to it or parallelize the execution of the model across multiple devices to improve its latency.</p>
+<p>However this is not true in the case of TinyML where the final hardware will be resource constrained and have limited instruction set support. Therefore, for TinyML, the final hardware is a bottleneck that we need to keep in mind when training our models. Unfortunately for us, the constraints of the deployment hardware creates a domino effect that affects not only our final model’s accuracy, but also the kind of layers we can use and how secure and robust we can make our model.</p>
+<!--- 
+TODO - Add a sub-section about target hardware: How does target architecture, supported instruction sets etc affect the subsections mentioned below
+--->
 <div class="section" id="model-accuracy">
 <h2>Model Accuracy<a class="headerlink" href="#model-accuracy" title="Permalink to this headline">¶</a></h2>
 <p>TinyML devices have less computational power and they do not support many operations. Moreover they do not have a lot of memory. This means that the models we deploy to TinyML devices need to be small, efficient and simple. However these qualities are completely opposite to what makes models accurate. And this is one of the biggest challenges in training TinyML models: How do we make models tiny, while still making sure that they are accurate enough to perform our tasks?</p>
@@ -511,7 +514,7 @@
 </div>
 <div class="section" id="model-architecture">
 <h2>Model Architecture<a class="headerlink" href="#model-architecture" title="Permalink to this headline">¶</a></h2>
-<p>Another factor affecting latency is the architecture of the model.</p>
+<p>Another factor affecting latency is the architecture of the model. Models with</p>
 </div>
 <div class="section" id="model-security-and-robustness">
 <h2>Model Security and Robustness<a class="headerlink" href="#model-security-and-robustness" title="Permalink to this headline">¶</a></h2>

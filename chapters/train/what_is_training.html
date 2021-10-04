@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Challenges in Training TinyML Models" href="training_challenges.html" />
-    <link rel="prev" title="Hardware for TinyMLOps" href="../tinymlops/hardware.html" />
+    <link rel="prev" title="Preprocessing Data" href="../data/data_preprocessing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -171,7 +171,29 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Training Models
+  Data Engineering for TinyML
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data/data_challenges.html">
+   Data Challenges
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data/data_collection.html">
+   Data Collection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data/data_preprocessing.html">
+   Preprocessing Data
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Training Models for TinyML
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -203,7 +225,7 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Optimizing Models
+  Optimizing Models for TinyML
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -230,28 +252,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../optimize/optimization_pipeline.html">
    Pipeline for Optimizing TinyML Models
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Model Files
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../model/what_are_model_files.html">
-   What are TinyML Model Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../model/model_file_challenges.html">
-   Dealing with Multiple Model Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../model/working_with_model_files.html">
-   Working with Model Files
   </a>
  </li>
 </ul>
@@ -471,8 +471,9 @@
                 
   <div class="section" id="training-models-for-tinyml">
 <h1>Training Models for TinyML<a class="headerlink" href="#training-models-for-tinyml" title="Permalink to this headline">¶</a></h1>
-<p>When training models for large systems, we almost always focus on improving the accuracy of the model. Two methods that will almost always increase your model’s accuracy are to either use more high quality data or to use larger models with complex layers, operations and data flows. In the first case, we have already talked about how data can be collected and preprocessed as well as how we can apply feature engineering techniques to improve the performance of TinyML models. However, when we train models for TinyML, we cannot use large and complex custom layers. In fact, we cannot use most of the commonly available model architectures or layers and operations that are typically used in large models since they are not supported on many TinyML devices. This poses a problem since we need to train models such that they can maintain appreciable performance while still being computationally simple and occupy less memory.</p>
-<p>In this chapter, we will learn more about how we can design and train models such that we can get the least performance degradation when we deploy it to a TinyML device.</p>
+<p>When training models for large systems, we almost always focus on improving the accuracy of the model. Two methods that will generally increase your model’s accuracy are to either use more high quality data or to use larger model architectures with complex layers, operations and data flows. In the first case, we have already talked about how data can be collected and preprocessed as well as how we can apply feature engineering techniques to improve the performance of TinyML models.</p>
+<p>However, unlike MLOps, when we train models for TinyML we cannot use large and complex custom layers. In fact, we cannot use most of the commonly available model architectures or layers and operations that are typically used in large models since they are not supported on many TinyML devices. This creates a dilemma since we need to train models such that they can maintain appreciable accuracy while still being computationally simple and occupy less memory.</p>
+<p>In this chapter, we will learn more about how we can design and train models such that we can get the least accuracy degradation while still being computationally cheap when we deploy it to a TinyML device.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -505,11 +506,11 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../tinymlops/hardware.html" title="previous page">
+        <a class="left-prev" href="../data/data_preprocessing.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Hardware for TinyMLOps</p>
+                <p class="prevnext-title">Preprocessing Data</p>
             </div>
         </a>
     </div>

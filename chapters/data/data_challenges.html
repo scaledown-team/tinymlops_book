@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Working with Model Files &#8212; Practical TinyMLOps</title>
+    <title>Data Challenges &#8212; Practical TinyMLOps</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="What is Benchmarking" href="../benchmark/what_is_benchmarking.html" />
-    <link rel="prev" title="Dealing with Multiple Model Files" href="model_file_challenges.html" />
+    <link rel="next" title="Data Collection" href="data_collection.html" />
+    <link rel="prev" title="Hardware for TinyMLOps" href="../tinymlops/hardware.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -171,7 +171,29 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Training Models
+  Data Engineering for TinyML
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Data Challenges
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_collection.html">
+   Data Collection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_preprocessing.html">
+   Preprocessing Data
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Training Models for TinyML
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -203,7 +225,7 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Optimizing Models
+  Optimizing Models for TinyML
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -230,28 +252,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../optimize/optimization_pipeline.html">
    Pipeline for Optimizing TinyML Models
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Model Files
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="what_are_model_files.html">
-   What are TinyML Model Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="model_file_challenges.html">
-   Dealing with Multiple Model Files
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Working with Model Files
   </a>
  </li>
 </ul>
@@ -403,7 +403,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/chapters/model/working_with_model_files.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/chapters/data/data_challenges.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -423,7 +423,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/scaledown-team/tinymlops_book/issues/new?title=Issue%20on%20page%20%2Fchapters/model/working_with_model_files.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/scaledown-team/tinymlops_book/issues/new?title=Issue%20on%20page%20%2Fchapters/data/data_challenges.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -444,7 +444,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/scaledown-team/tinymlops_book/main?urlpath=tree/book/chapters/model/working_with_model_files.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/scaledown-team/tinymlops_book/main?urlpath=tree/book/chapters/data/data_challenges.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -469,8 +469,8 @@
         
               <div>
                 
-  <div class="section" id="working-with-model-files">
-<h1>Working with Model Files<a class="headerlink" href="#working-with-model-files" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="data-challenges">
+<h1>Data Challenges<a class="headerlink" href="#data-challenges" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -486,7 +486,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./chapters/model"
+            path: "./chapters/data"
         },
         predefinedOutput: true
     }
@@ -503,19 +503,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="model_file_challenges.html" title="previous page">
+        <a class="left-prev" href="../tinymlops/hardware.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Dealing with Multiple Model Files</p>
+                <p class="prevnext-title">Hardware for TinyMLOps</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="../benchmark/what_is_benchmarking.html" title="next page">
+        <a class="right-next" href="data_collection.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">What is Benchmarking</p>
+                <p class="prevnext-title">Data Collection</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
