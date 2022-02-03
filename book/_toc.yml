@@ -6,13 +6,13 @@ parts:
   - caption: Preface
     chapters:
     - file: chapters/preface/acknowledgements
-  - caption: Introduction
+  - caption: Introduction to TinyMLOps
     chapters:
     - file: chapters/introduction/what_is_mlops
     - file: chapters/introduction/what_is_tinyml
     - file: chapters/introduction/mlops_tools
     - file: chapters/introduction/what_is_tinymlops
-  - caption: TinyMLOps
+  - caption: Fundamentals of TinyMLOps
     chapters:
     - file: chapters/tinymlops/mlops_for_tinyml
     - file: chapters/tinymlops/need_for_tinymlops
@@ -20,7 +20,7 @@ parts:
     - file: chapters/tinymlops/tinymlops_tools
     - file: chapters/tinymlops/pipeline
     - file: chapters/tinymlops/hardware
-  - caption: Data Engineering for TinyML
+  - caption: Data Engineering
     chapters:
     - file: chapters/data/data_challenges
     - file: chapters/data/data_collection
@@ -45,7 +45,7 @@ parts:
     - file: chapters/benchmark/benchmarking_challenges
     - file: chapters/benchmark/how_to_benchmark
     - file: chapters/benchmark/benchmarking_pipeline
-  - caption: Deploying TinyML Systems
+  - caption: Deploying TinyML Models
     chapters:
     - file: chapters/deploy/what_is_deploying
     - file: chapters/deploy/deploying_challenges
